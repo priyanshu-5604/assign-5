@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: auto; */
+    /* width: auto; */
+}
+body{
+    height: fit-content;
+    width:auto;
+}
+header{
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type:none;
+    align-items: center;
+}
+ul li a{
+    /* here 30 for left right and 0 for top bottom  */
+    padding:0 20px;
+    text-decoration: none;
+    color:darkblue;
+    display: inline-block;
+    font: 1em sans-serif;
+    font-size:medium;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background:deepskyblue;
+    transition:all .7s
+}
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    /* border:1px solid red; */
+    /* height:100vh; */
+    height:calc(100vh - 160px);
+    align-items: center;
+    justify-content: center;
+}
+.side image{
+    max-width: 670px;
+    height:auto;
+}
+.content-left{
+    width: 30%;
+}
+main h1{
+    font-size:35px;
+    color: rgb(58, 101, 221);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+main h3{
+    font-size: 22px;
+    color: #5d7f;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+main p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #5f6af2;
+    line-height:31.5px;
+    margin:30px 0;
+}
+.cta{
+    padding:15px 30px;
+    background-color: chartreuse;
+    color: blue;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;  
+}
+.signup-btn{
+    padding:15px 30px;
+    background-color: chartreuse;
+    color: blue;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;  
+    
+}
